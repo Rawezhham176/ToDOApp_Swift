@@ -28,12 +28,35 @@ class ViewController: UIViewController {
         }
 
         // Get all saved tasks
+        updateTasks()
+    }
+
+    func updateTasks() {
+
+        tasks.removeAll()
+
+        guard let count =  UserDefaults().value(forKey: "count") as? Int else {
+            return
+        }
+
+        for x in 0..<count {
+            if let task = UserDefaults().value(forKey: "task_\(x+1)") as? String {
+                tasks.append(task)
+            }
+        }
+
+        tableView.reloadData()
     }
 
     @IBAction func didTapAdd() {
 
         let vc = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
         vc.title = "New Task"
+        vc.update = {
+            DispatchQueue.main.async{
+                self.updateTasks()
+            }
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
 
@@ -42,6 +65,12 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        let vc = storyboard?.instantiateViewController(identifier: "task") as! TaskViewController
+        vc.title = "New Task"
+        vc.task = tasks[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+
     }
 }
 
