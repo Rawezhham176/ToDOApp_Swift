@@ -1,1 +1,1 @@
-´Welcome to the To Do App for IOS
+To Do App for IOS made with Swift
