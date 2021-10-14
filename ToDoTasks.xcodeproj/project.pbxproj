@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3A084DE2718396200CA48D7 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A084DD2718396200CA48D7 /* EntryViewController.swift */; };
+		E3A084E02718399B00CA48D7 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A084DF2718399B00CA48D7 /* TaskViewController.swift */; };
 		E3F66DD22716F8390007A9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F66DD12716F8390007A9CB /* AppDelegate.swift */; };
 		E3F66DD42716F8390007A9CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F66DD32716F8390007A9CB /* SceneDelegate.swift */; };
 		E3F66DD62716F8390007A9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F66DD52716F8390007A9CB /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3A084DD2718396200CA48D7 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		E3A084DF2718399B00CA48D7 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		E3F66DCE2716F8390007A9CB /* ToDoTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3F66DD12716F8390007A9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3F66DD32716F8390007A9CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				E3F66DDA2716F83A0007A9CB /* Assets.xcassets */,
 				E3F66DDC2716F83A0007A9CB /* LaunchScreen.storyboard */,
 				E3F66DDF2716F83A0007A9CB /* Info.plist */,
+				E3A084DD2718396200CA48D7 /* EntryViewController.swift */,
+				E3A084DF2718399B00CA48D7 /* TaskViewController.swift */,
 			);
 			path = ToDoTasks;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3F66DD62716F8390007A9CB /* ViewController.swift in Sources */,
+				E3A084DE2718396200CA48D7 /* EntryViewController.swift in Sources */,
+				E3A084E02718399B00CA48D7 /* TaskViewController.swift in Sources */,
 				E3F66DD22716F8390007A9CB /* AppDelegate.swift in Sources */,
 				E3F66DD42716F8390007A9CB /* SceneDelegate.swift in Sources */,
 			);
@@ -217,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
